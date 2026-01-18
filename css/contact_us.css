@@ -12,10 +12,10 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-.logo_contact_us{
-    width: 60%;
-    display: block;
-    margin: 5% auto;
+.logo_contact_us {
+  width: 60%;
+  display: block;
+  margin: 5% auto;
 }
 
 .container {
@@ -375,7 +375,18 @@ textarea.input {
     color: #11101d;
     font-size: 25px;
     font-weight: 500;
-    margin: 18px;
+    font-weight: 500;
+    margin: 18px 0;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .form {
+    width: 100%;
+    margin: 0;
   }
 
   .title {

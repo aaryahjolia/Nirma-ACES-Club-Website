@@ -1,48 +1,58 @@
-.showcase{
-    /* background: #ddd; */
-    padding: 6rem 0;
-    max-width: 1100px;
-    width: 80%;
-    margin: 0 auto;
+.showcase {
+   /* background: #ddd; */
+   padding: 6rem 0;
+   max-width: 1100px;
+   width: 80%;
+   margin: 0 auto;
 }
-.row{
+
+.row {
    height: 360px;
    /* border: 2px solid red; */
    margin-bottom: 6rem;
    background: #fff;
-   box-shadow:0px 0px 20px 6px rgba(0, 0, 0, 0.719);
+   box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.719);
 }
-.row1 .img-box, .row2 .text-box{
+
+.row1 .img-box,
+.row2 .text-box {
    float: left;
    width: 50%;
    height: 100%;
 }
-.row2 .img-box, .row1 .text-box{
+
+.row2 .img-box,
+.row1 .text-box {
    float: right;
    width: 50%;
    height: 100%;
 }
-.row .img-box img{
+
+.row .img-box img {
    height: 100%;
    width: 100%;
    display: inline-block;
    object-fit: cover;
 }
-.row .text-box{
+
+.row .text-box {
    padding: 1.3rem;
    text-transform: uppercase;
    letter-spacing: 0.15rem;
    color: #ed5350;
    /* font-size: 1.3rem; */
 }
-.text-box p{
+
+.text-box p {
    padding-top: 25px;
    color: rgb(87, 87, 87);
 }
-.text-box h1{
+
+.text-box h1 {
    border-bottom: 2px solid #ed5350;
 }
-.text-box .btn-1{
+
+.text-box .btn-1 {
    display: inline-block;
    color: #ed5350;
    background: white;
@@ -52,29 +62,39 @@
    text-decoration: none;
    padding: 0.5rem 0.8rem;
 }
-.text-box .btn-1:hover{
+
+.text-box .btn-1:hover {
    background: #ccc;
 }
-.h1_about{
-    text-align: center;
-    font-size: 2.9rem;
-    padding: 2rem;
-    padding-bottom: 0;
-    border-bottom: 8px solid black;
-    margin: 0 7rem;
-}
 
-
-@media (max-width:500px){
-.row{
-   /* float: none; */
-   height: auto;
-   width: 100%;
-}
-.row2 .img-box, .row1 .text-box, .row1 .img-box, .row2 .text-box{
-   float: none;
-   width: 100%;
+.h1_about {
    text-align: center;
-   /* display: block; */
+   font-size: 2.9rem;
+   padding: 2rem;
+   padding-bottom: 0;
+   border-bottom: 8px solid black;
+   margin: 0 7rem;
 }
+
+
+@media (max-width:500px) {
+   .row {
+      /* float: none; */
+      height: auto;
+      width: 100%;
+   }
+
+   .row2 .img-box,
+   .row1 .text-box,
+   .row1 .img-box,
+   .row2 .text-box {
+      float: none;
+      width: 100%;
+      text-align: center;
+      /* display: block; */
+   }
+
+   .h1_about {
+      margin: 0 2rem;
+   }
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -6,11 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   /* font-family: ; write font here */
   font-size: 10px;
   font-family: "Poppins", sans-serif;
 }
+
 .img_event {
   width: 100%;
 }
@@ -21,11 +24,16 @@ body {
   background-color: #eee;
   /* padding: 0 1.5rem; */
 }
-.h1_event{
+
+.h1_event {
   text-align: center;
-  font-size: 67px;
-  padding-top: 45px;
+  font-size: 2.9rem;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-bottom: 8px solid black;
+  margin: 0 7rem;
 }
+
 .event {
   width: 80%;
   max-width: 98rem;
@@ -38,13 +46,15 @@ body {
   margin: 10rem auto;
   margin-top: 4rem;
 }
-.event_img{
+
+.event_img {
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
   transform: translateX(-8rem);
   position: relative;
 }
+
 .event_img img {
   width: 100%;
   height: 100%;
@@ -52,6 +62,7 @@ body {
   display: block;
   border-radius: 0.8rem;
 }
+
 .event_img::before {
   content: "";
   width: 100%;
@@ -71,11 +82,13 @@ body {
   font-weight: 600;
   margin: 0.5rem 0;
 }
+
 .eventTitle {
   margin-bottom: 1rem;
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.9);
 }
+
 .event_cta {
   display: inline-block;
   padding: 1.2rem 2.5rem;
@@ -83,21 +96,39 @@ body {
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #fff;
-  background: linear-gradient(
-    90deg,
-    #0683b4 37%,
-    #055675 100%
-  );
+  background: linear-gradient(90deg,
+      #0683b4 37%,
+      #055675 100%);
   border-radius: 1rem;
   text-decoration: none;
 }
+
 .event_cta:hover {
-  background: linear-gradient(
-    90deg,
-    #056388 37%,
-    #0683b4 100%
-  );
+  background: linear-gradient(90deg,
+      #056388 37%,
+      #0683b4 100%);
 }
-.eventText{
-    margin-bottom: 1rem;
+
+.eventText {
+  margin-bottom: 1rem;
+}
+
+@media (max-width:500px) {
+  .h1_event {
+    margin: 0 2rem;
+  }
+
+  .event {
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .event_img {
+    min-width: 100%;
+    max-width: 100%;
+    transform: none;
+    margin-bottom: 2rem;
+    height: 20rem;
+  }
 }

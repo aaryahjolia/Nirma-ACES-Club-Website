@@ -1,53 +1,67 @@
-#logo{
-    line-height: 60px;
-    margin-left: 40px;
-    display: inline-block;
+#logo {
+	line-height: 60px;
+	margin-left: 40px;
+	display: inline-block;
 	cursor: pointer;
 	font-size: 30px;
 	font-weight: bold;
-	color: #00a7ff; /* blue */
+	color: #00a7ff;
+	/* blue */
 }
-#logo:hover{
-    color: #eef9ff; /* white */
+
+#logo:hover {
+	color: #eef9ff;
+	/* white */
 }
-#logo-s{
-	color: #eef9ff; /* white */
+
+#logo-s {
+	color: #eef9ff;
+	/* white */
 	margin-left: 5px;
 }
-#logo:hover #logo-s{
-	color: #00a7ff; /* blue */
+
+#logo:hover #logo-s {
+	color: #00a7ff;
+	/* blue */
 }
-.sign{
+
+.sign {
 	float: right;
 	line-height: 60px;
 	margin-right: 40px;
 }
-.sign a{
+
+.sign a {
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
 }
-.act{
+
+.act {
 	border: 2px solid #fff;
 	border-radius: 50px;
 	padding: 6px 15px;
 }
-.sign a:hover{
-	color: #00a7ff; 
-	border-color: #00a7ff; 
+
+.sign a:hover {
+	color: #00a7ff;
+	border-color: #00a7ff;
 }
-.slider{
+
+.slider {
 	position: relative;
 	width: 100%;
 	background: #2c3e50;
 }
-.myslide{
+
+.myslide {
 	height: 500px;
 	display: none;
 	overflow: hidden;
 }
 
-.prev, .next{
+.prev,
+.next {
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
@@ -58,20 +72,25 @@
 	transition: 0.1s;
 	user-select: none;
 }
-.prev:hover, .next:hover{
-	color: #00a7ff; 
+
+.prev:hover,
+.next:hover {
+	color: #00a7ff;
 }
-.next{
+
+.next {
 	right: 0;
 }
-.dotsbox{
+
+.dotsbox {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
 	bottom: 20px;
 	cursor: pointer;
 }
-.dot{
+
+.dot {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -81,26 +100,39 @@
 	cursor: pointer;
 }
 
-.active, .dot:hover{
-	border-color: #00a7ff; 
+.active,
+.dot:hover {
+	border-color: #00a7ff;
 }
+
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+	from {
+		opacity: 0.8
+	}
+
+	to {
+		opacity: 1
+	}
 }
 
 @keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+	from {
+		opacity: 0.8
+	}
+
+	to {
+		opacity: 1
+	}
 }
-.txt{
+
+.txt {
 	position: absolute;
 	color: #fff;
 	letter-spacing: 2px;
@@ -109,63 +141,87 @@
 	left: 15%;
 	background-color: rgb(255, 255, 255);
 	-webkit-animation-name: posi;
-  	-webkit-animation-duration: 2s;
-  	animation-name: posi;
-  	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-name: posi;
+	animation-duration: 2s;
 	z-index: 1;
 	padding: 2rem 1rem 1rem 1rem;
 	border-radius: 0.8rem;
 }
 
 @-webkit-keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
+	from {
+		left: 25%;
+	}
+
+	to {
+		left: 15%;
+	}
 }
 
 
 @keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
+	from {
+		left: 25%;
+	}
+
+	to {
+		left: 15%;
+	}
 }
 
-.txt h1{
-	color: #ed5350; 
+.txt h1 {
+	color: #ed5350;
 	font-size: 50px;
 	margin-bottom: 20px;
 }
-.txt p{
+
+.txt p {
 	font-weight: bold;
 	font-size: 20px;
 	color: black;
 }
 
-.img{
+.img {
 	transform: scale(1.5, 1.5);
 	-webkit-animation-name: zoomin;
-  	-webkit-animation-duration: 40s;
-  	animation-name: zoomin;
-  	animation-duration: 40s;
+	-webkit-animation-duration: 40s;
+	animation-name: zoomin;
+	animation-duration: 40s;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
 	display: inline-block;
 	object-fit: cover;
 }
+
 @-webkit-keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+	from {
+		transform: scale(1, 1);
+	}
+
+	to {
+		transform: scale(1.5, 1.5);
+	}
 }
 
 
 @keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+	from {
+		transform: scale(1, 1);
+	}
+
+	to {
+		transform: scale(1.5, 1.5);
+	}
 }
-@media screen and (max-width: 800px){
-	.myslide{
+
+@media screen and (max-width: 800px) {
+	.myslide {
 		height: 500px;
 	}
-	.txt{
+
+	.txt {
 		letter-spacing: 2px;
 		line-height: 25px;
 		top: 50%;
@@ -178,34 +234,47 @@
 	}
 
 	@-webkit-keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
+		from {
+			top: 35%;
+		}
+
+		to {
+			top: 50%;
+		}
 	}
 
 
 	@keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
+		from {
+			top: 35%;
+		}
+
+		to {
+			top: 50%;
+		}
 	}
 
-	.txt h1{
+	.txt h1 {
 		font-size: 40px;
 	}
-	.txt p{
+
+	.txt p {
 		font-size: 13px;
 	}
 
 }
 
-@media screen and (max-width: 520px){
-	.txt h1{
+@media screen and (max-width: 520px) {
+	.txt h1 {
 		font-size: 30px;
 		margin-bottom: 20px;
 	}
-	.sign{
+
+	.sign {
 		margin-right: 20px;
 	}
-	.sign a{
+
+	.sign a {
 		font-size: 12px;
 	}
 }
